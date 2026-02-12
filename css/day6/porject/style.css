@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+}
+header {
+ background-color: rgb(44, 201, 149);
+ /* position: fixed; */
+ /* position: absolute; */
+ position: fixed;
+ width: 100%;
+ /* height: 50px; */
+ /* top: 10px; */
+}
+main {
+    padding-top: 60px;
+}

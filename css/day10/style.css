@@ -1,0 +1,18 @@
+/* h1 {
+    background-color: aqua;
+    color: orange;
+    /* text-align: center; */
+/* } */ 
+/* text align start end center justify
+
+*/
+.container{
+    background-color: aquamarine;
+    align-items: center;
+}
+h1{
+    color: blue;
+}
+p{
+    color: firebrick;
+}

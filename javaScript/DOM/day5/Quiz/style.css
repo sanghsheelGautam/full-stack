@@ -1,0 +1,47 @@
+/* body{
+    height: 100vh;
+    background-color: white;
+} */
+  html{
+    height: 100%;
+    width: 100%;
+ }
+
+   
+
+.container{
+    /* height: 100vh; */
+    height: 100%;
+    width: 100%; 
+    margin: 10px;
+    /* background: #000; */
+    box-shadow: 10px 0px 100px 20px hsl(0, 100%, 10%);
+    
+}
+h1{
+    font-size: 45px;
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#quizForm{
+    width: 91vw; 
+    font-size: 20px;
+    margin: 40px;
+    font-weight: 300;
+   
+}
+button{
+     /* height: 100vh; */
+    width: 91vh; 
+    
+    padding: 10px;
+    background-color: rgb(20, 20, 156);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    
+}

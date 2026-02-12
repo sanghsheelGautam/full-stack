@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    padding: 4rem;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(7, 7, 7);
+    display: flex;
+    align-items: center;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: movement;
+    animation-duration:3s ;
+    animation-timing-function: linear;
+    position: relative;
+}
+@keyframes movement {
+    from{
+        top: 0px;
+        left: 0px;
+        
+    }
+    to{
+        top: 0px;
+        left: 800px;
+    }
+}
