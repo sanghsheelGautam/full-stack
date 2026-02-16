@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+}
+/* flex direction will identify my main axix */
+/* row horizontal is main axis */
+/* column vertical is main axis */
+
+/* 
+justify content it will around main axis
+
+*/
+
+/* 
+align item work around cross axes ex |
+
+*/
+/* 
+flex 
+
+*/
+.container{
+    /* height: 116px; */
+    height: 700px;
+    /* width: 400px; */
+    background-color: rgb(116, 116, 104);
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+    /* justify-content: space-around; */
+    justify-content: center;
+    align-items: center;
+    /* align-items: baseline; */
+    /* flex-wrap: wrap; */
+
+}
+/* .fist{
+    font-size: 50px;
+}
+.second{
+    font-size: 25px;
+} */
+.box{
+    height: 100px;
+    width: 100px;
+    border: 5px solid black;
+    margin: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.box1{
+    background-color: red;
+    /* flex-grow: 1; */
+}
+
+.box2{
+    background-color: rgb(156, 224, 117);
+    /* order: -1; */
+    /* flex-shrink: 2; */
+    /* flex-basis: 300px; */
+}
+.box3{
+    background-color: rgb(128, 92, 195);
+        /* margin-top: 10px;   
+        margin-left: 10px; */
+        /* align-self: self-start; */
+
+
+}
+.box4{
+    background-color: rgb(195, 239, 49);
+        /* margin-top: 10px;   
+        margin-left: 10px; */
+
+
+}

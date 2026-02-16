@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stella — Personal Astrology Reading</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <section class="card">
+      <header class="logo">
+        <div class="icon">☆</div>
+        <div>
+          <h1>Stella — Instant Astrology</h1>
+          <p class="lead">Enter basic details and get a neat sun-sign reading, age, and personality snapshot. No login — client-side only.</p>
+        </div>
+      </header>
+
+      <form id="astroForm" onsubmit="return false;">
+        <div class="row">
+          <div class="field" style="flex:1">
+            <label>First name</label>
+            <input id="first" type="text" placeholder="Eg. Aisha" required />
+          </div>
+          <div class="field" style="flex:1">
+            <label>Last name</label>
+            <input id="last" type="text" placeholder="Eg. Khan" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field" style="width:30%">
+            <label>Day</label>
+            <input id="day" type="number" min="1" max="31" placeholder="1-31" required />
+          </div>
+          <div class="field" style="width:40%">
+            <label>Month</label>
+            <select id="month" required>
+              <option value="">Select month</option>
+              <option value="1">January</option>
+              <option value="2">February</option>
+              <option value="3">March</option>
+              <option value="4">April</option>
+              <option value="5">May</option>
+              <option value="6">June</option>
+              <option value="7">July</option>
+              <option value="8">August</option>
+              <option value="9">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+          </div>
+          <div class="field" style="width:30%">
+            <label>Year</label>
+            <input id="year" type="number" min="1900" max="2100" placeholder="Eg. 1996" required />
+          </div>
+        </div>
+
+        <div class="hint">We only use the date to produce a fun reading. This runs entirely in your browser.</div>
+
+        <div class="btn-row">
+          <button class="btn primary" id="readBtn">Get Reading</button>
+          <button class="btn ghost" id="resetBtn" type="button">Reset</button>
+        </div>
+
+        <div style="margin-top:12px;font-size:12px;color:rgba(255,255,255,0.55)">Pro tip: Add accurate time & place later to expand to full natal map.</div>
+      </form>
+      <div id="result"> </div>
+      <!-- <div style="margin-top:18px;">
+        <small class="hint">Made with ♥ — customize the reading and styles as you like.</small>
+      </div>
+    </section>
+
+    <aside class="result-area">
+      <div class="card big-card">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <div class="sign-pill" id="signPill">
+              <div class="sign-icon">☉</div>
+              <div>
+                <p class="sign-title" id="fullname">Your Name</p>
+                <p class="sign-sub" id="basicInfo">DOB — Age — Sun sign</p>
+              </div>
+            </div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-size:12px;color:rgba(255,255,255,0.6)">Quick share</div>
+            <div style="margin-top:8px;display:flex;gap:8px;justify-content:flex-end">
+              <button class="btn ghost" id="copyBtn">Copy</button>
+              <button class="btn ghost" id="downloadBtn">Download</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="reading" id="readingText">Fill the form and press <strong>Get Reading</strong> — your instant sun-sign reading will appear here.</div>
+
+        <div class="grid-stats" style="margin-top:16px">
+          <div class="stat">
+            <strong id="statAge">—</strong>
+            <span>Age</span>
+          </div>
+          <div class="stat">
+            <strong id="statSign">—</strong>
+            <span>Sun sign</span>
+          </div>
+          <div class="stat">
+            <strong id="statLucky">—</strong>
+            <span>Lucky hint</span>
+          </div>
+        </div> -->
+
+        <!-- <footer class="note">Note: This is an entertainment reading (client-side only). For advanced charts you will later need time/place & an ephemeris API.</footer>
+      </div>
+
+      <div class="card">
+        <h3 style="margin:0 0 8px 0">What's next?</h3>
+        <ul style="margin:0 0 0 18px;padding:0;color:rgba(255,255,255,0.8)">
+          <li>Allow users to save their reports (localStorage or backend)</li>
+          <li>Add time & place for ascendant/house calculations</li>
+          <li>Connect to astronomy APIs for planetary positions</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <div id="copied" class="copy-success" style="display:none">Copied to clipboard</div> -->
+
+ <script src="./Script.js"></script>
+</body>
+</html>

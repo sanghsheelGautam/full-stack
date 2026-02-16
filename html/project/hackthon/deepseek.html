@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML Course</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e50, #1a2530);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .sidebar {
+            width: 250px;
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+            position: sticky;
+            align-self: flex-start;
+            top: 20px;
+        }
+        
+        .sidebar h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .sidebar ul {
+            list-style: none;
+        }
+        
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+        
+        .sidebar a {
+            display: block;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #2c3e50;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .sidebar a:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        .content {
+            flex: 1;
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .page {
+            display: none;
+        }
+        
+        .page:target {
+            display: block;
+        }
+        
+        .page:target ~ #home {
+            display: none;
+        }
+        
+        #home {
+            display: block;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        h3 {
+            color: #3498db;
+            margin: 25px 0 15px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        .code-example {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        
+        .code-example pre {
+            white-space: pre-wrap;
+        }
+        
+        .note {
+            background-color: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #2c3e50;
+            color: white;
+        }
+        
+        .practice-btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .practice-btn:hover {
+            background-color: #2980b9;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Complete HTML Course</h1>
+        <p>Learn HTML from scratch with theory and practical examples</p>
+    </header>
+    
+    <div class="container">
+        <div class="sidebar">
+            <h2>Course Content</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#intro">Introduction to HTML</a></li>
+                <li><a href="#basic-tags">Basic HTML Tags</a></li>
+                <li><a href="#links-images">Links and Images</a></li>
+                <li><a href="#tables">HTML Tables</a></li>
+                <li><a href="#forms">HTML Forms</a></li>
+                <li><a href="#semantic">Semantic HTML</a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <div id="home" class="page">
+                <h2>Welcome to HTML Course</h2>
+                <p>This comprehensive course will teach you everything you need to know about HTML, from basic tags to advanced semantic elements.</p>
+                
+                <h3>What You'll Learn</h3>
+                <ul>
+                    <li>HTML document structure</li>
+                    <li>Text formatting and basic tags</li>
+                    <li>Working with links and images</li>
+                    <li>Creating tables and forms</li>
+                    <li>Semantic HTML for better structure and accessibility</li>
+                </ul>
+                
+                <h3>How to Use This Course</h3>
+                <p>Navigate through the lessons using the sidebar. Each section contains theoretical explanations followed by practical code examples.</p>
+                
+                <div class="note">
+                    <p><strong>Note:</strong> You can practice HTML by trying the code examples in a text editor and viewing them in a browser.</p>
+                </div>
+                
+                <p>Ready to begin? Start with the <a href="#intro">Introduction to HTML</a>.</p>
+            </div>
+            
+            <div id="intro" class="page">
+                <h2>Introduction to HTML</h2>
+                <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages. It describes the structure of a web page and consists of a series of elements that tell the browser how to display content.</p>
+                
+                <h3>Basic HTML Document Structure</h3>
+                <p>Every HTML document follows a basic structure:</p>
+                
+                <div class="code-example">
+                    <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;My First Heading&lt;/h1&gt;
+    &lt;p&gt;My first paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+                </div>
+                
+                <h3>HTML Elements</h3>
+                <p>HTML elements are the building blocks of HTML pages. Each element consists of a start tag, content, and an end tag:</p>
+                
+                <div class="code-example">
+                    <pre>&lt;tagname&gt;Content goes here...&lt;/tagname&gt;</pre>
+                </div>
+                
+                <div class="note">
+                    <p><strong>Remember:</strong> Some HTML elements (like &lt;img&gt;) are self-closing and don't have an end tag.</p>
+                </div>
+                
+                <a href="#basic-tags" class="practice-btn">Next: Basic HTML Tags</a>
+            </div>
+            
+            <div id="basic-tags" class="page">
+                <h2>Basic HTML Tags</h2>
+                <p>HTML provides various tags to structure content on a web page. Here are some of the most commonly used ones:</p>
+                
+                <h3>Heading Tags</h3>
+                <p>HTML has six levels of headings, from &lt;h1&gt; (most important) to &lt;h6&gt; (least important):</p>
+                
+                <div class="code-example">
+                    <pre>&lt;h1&gt;This is a Heading 1&lt;/h1&gt;
+&lt;h2&gt;This is a Heading 2&lt;/h2&gt;
+&lt;h3&gt;This is a Heading 3&lt;/h3&gt;
+&lt;h4&gt;This is a Heading 4&lt;/h4&gt;
+&lt;h5&gt;This is a Heading 5&lt;/h5&gt;
+&lt;h6&gt;This is a Heading 6&lt;/h6&gt;</pre>
+                </div>
+                
+                <h3>Paragraph and Text Formatting Tags</h3>
+                <p>These tags help structure textual content:</p>
+                
+                <div class="code-example">
+                    <pre>&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;strong&gt;This text is important (bold)&lt;/strong&gt;
+&lt;em&gt;This text is emphasized (italic)&lt;/em&gt;
+&lt;br&gt;  &lt;!-- Line break --&gt;
+&lt;hr&gt;  &lt;!-- Horizontal rule --&gt;</pre>
+                </div>
+                
+                <h3>List Tags</h3>
+                <p>HTML supports ordered (numbered) and unordered (bulleted) lists:</p>
+                
+                <div class="code-example">
+                    <pre>&lt;ul&gt;
+    &lt;li&gt;Unordered list item 1&lt;/li&gt;
+    &lt;li&gt;Unordered list item 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Ordered list item 1&lt;/li&gt;
+    &lt;li&gt;Ordered list item 2&lt;/li&gt;
+&lt;/ol&gt;</pre>
+                </div>
+                
+                <a href="#links-images" class="practice-btn">Next: Links and Images</a>
+            </div>
+            
+            <div id="links-images" class="page">
+                <h2>Links and Images</h2>
+                <p>Links and images are essential elements of most web pages. HTML provides simple ways to add both.</p>
+                
+                <h3>Anchor Tags (Links)</h3>
+                <p>The &lt;a&gt; tag defines a hyperlink, which is used to link from one page to another:</p>
+                
+                <div class="code-example">
+                    <pre>&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
+&lt;a href="about.html"&gt;About Us&lt;/a&gt;
+&lt;a href="#section1"&gt;Jump to Section 1&lt;/a&gt;  &lt;!-- Internal link --&gt;</pre>
+                </div>
+                
+                <h3>Image Tags</h3>
+                <p>The &lt;img&gt; tag is used to embed an image in an HTML page. It is an empty tag containing only attributes:</p>
+                
+                <div class="code-example">
+                    <pre>&lt;img src="image.jpg" alt="Description of image"&gt;
+&lt;img src="photo.png" alt="A beautiful photo" width="500" height="600"&gt;</pre>
+                </div>
+                
+                <div class="note">
+                    <p><strong>Important:</strong> Always use the alt attribute to provide alternative text for images. This is crucial for accessibility and SEO.</p>
+                </div>
+                
+                <h3>Combining Links and Images</h3>
+                <p>You can use an image as a link by nesting an &lt;img&gt; tag inside an &lt;a&gt; tag:</p>
+                
+                <div class="code-example">
+                    <pre>&lt;a href="https://www.example.com"&gt;
+    &lt;img src="logo.png" alt="Example Logo"&gt;
+&lt;/a&gt;</pre>
+                </div>
+                
+                <a href="#tables" class="practice-btn">Next: HTML Tables</a>
+            </div>
+            
+            <div id="tables" class="page">
+                <h2>HTML Tables</h2>
+                <p>HTML tables allow you to arrange data into rows and columns. They are created using the &lt;table&gt; element.</p>
+                
+                <h3>Basic Table Structure</h3>
+                <p>A basic table consists of the &lt;table&gt; element, one or more &lt;tr&gt; elements (table rows), and &lt;td&gt; elements (table data cells):</p>
+                
+                <div class="code-example">
+                    <pre>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+        &lt;th&gt;Country&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+        &lt;td&gt;USA&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Maria&lt;/td&gt;
+        &lt;td&gt;32&lt;/td&gt;
+        &lt;td&gt;Spain&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</pre>
+                </div>
+                
+                <h3>Table Headers</h3>
+                <p>Use the &lt;th&gt; tag to define header cells. Most browsers display &lt;th&gt; elements in bold and centered:</p>
+                
+                <div class="code-example">
+                    <pre>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Product&lt;/th&gt;
+        &lt;th&gt;Price&lt;/th&gt;
+        &lt;th&gt;Quantity&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Apple&lt;/td&gt;
+        &lt;td&gt;$1.00&lt;/td&gt;
+        &lt;td&gt;10&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</pre>
+                </div>
+                
+                <h3>Table Styling Attributes</h3>
+                <p>While CSS is preferred for styling, some attributes can be used directly in HTML:</p>
+                
+                <div class="code-example">
+                    <pre>&lt;table border="1" cellpadding="10" cellspacing="0" width="100%"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Data 1&lt;/td&gt;
+        &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</pre>
+                </div>
+                
+                <div class="note">
+                    <p><strong>Note:</strong> While these attributes work, it's generally recommended to use CSS for styling tables in modern web development.</p>
+                </div>
+                
+                <a href="#forms" class="practice-btn">Next: HTML Forms</a>
+            </div>
+            
+            <div id="forms" class="page">
+                <h2>HTML Forms</h2>
+                <p>HTML forms are used to collect user input. A form contains input elements like text fields, checkboxes, radio buttons, submit buttons, and more.</p>
+                
+                <h3>Basic Form Structure</h3>
+                <p>The &lt;form&gt; element defines a form that can contain various input elements:</p>
+                
+                <div class="code-example">
+                    <pre>&lt;form action="/submit-form" method="post"&gt;
+    &lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;
+    
+    &lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="text" id="lname" name="lname"&gt;&lt;br&gt;
+    
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</pre>
+                </div>
+                
+                <h3>Common Input Types</h3>
+                <p>HTML provides various input types for different kinds of data:</p>
+                
+                <div class="code-example">
+                    <pre>&lt;input type="text"&gt;      &lt;!-- Text input --&gt;
+&lt;input type="password"&gt; &lt;!-- Password field --&gt;
+&lt;input type="email"&gt;    &lt;!-- Email address --&gt;
+&lt;input type="number"&gt;   &lt;!-- Numeric input --&gt;
+&lt;input type="date"&gt;     &lt;!-- Date picker --&gt;
+&lt;input type="checkbox"&gt; &lt;!-- Checkbox --&gt;
+&lt;input type="radio"&gt;    &lt;!-- Radio button --&gt;
+&lt;input type="file"&gt;     &lt;!-- File upload --&gt;
+&lt;input type="submit"&gt;   &lt;!-- Submit button --&gt;</pre>
+                </div>
+                
+                <h3>Select Dropdowns and Textareas</h3>
+                <p>For longer text inputs or multiple options, use these elements:</p>
+                
+                <div class="code-example">
+                    <pre>&lt;select name="cars"&gt;
+    &lt;option value="volvo"&gt;Volvo&lt;/option&gt;
+    &lt;option value="saab"&gt;Saab&lt;/option&gt;
+    &lt;option value="mercedes"&gt;Mercedes&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;textarea name="message" rows="10" cols="30"&gt;
+Default text goes here...
+&lt;/textarea&gt;</pre>
+                </div>
+                
+                <a href="#semantic" class="practice-btn">Next: Semantic HTML</a>
+            </div>
+            
+            <div id="semantic" class="page">
+                <h2>Semantic HTML</h2>
+                <p>Semantic HTML introduces meaning to the web page rather than just presentation. It makes web content more accessible and helps with SEO.</p>
+                
+                <h3>What are Semantic Elements?</h3>
+                <p>Semantic elements clearly describe their meaning to both the browser and developer. Examples of non-semantic elements: &lt;div&gt; and &lt;span&gt; - they tell nothing about their content. Examples of semantic elements: &lt;form&gt;, &lt;table&gt;, and &lt;article&gt; - they clearly define their content.</p>
+                
+                <h3>Common Semantic Tags</h3>
+                <p>HTML5 introduced many new semantic elements:</p>
+                
+                <div class="code-example">
+                    <pre>&lt;header&gt;Defines a header for a document or section&lt;/header&gt;
+&lt;nav&gt;Defines navigation links&lt;/nav&gt;
+&lt;main&gt;Specifies the main content of a document&lt;/main&gt;
+&lt;section&gt;Defines a section in a document&lt;/section&gt;
+&lt;article&gt;Defines independent, self-contained content&lt;/article&gt;
+&lt;aside&gt;Defines content aside from the page content&lt;/aside&gt;
+&lt;footer&gt;Defines a footer for a document or section&lt;/footer&gt;
+&lt;figure&gt;Specifies self-contained content&lt;/figure&gt;
+&lt;figcaption&gt;Defines a caption for a &lt;figure&gt; element&lt;/figcaption&gt;
+&lt;mark&gt;Defines marked/highlighted text&lt;/mark&gt;
+&lt;time&gt;Defines a date/time&lt;/time&gt;</pre>
+                </div>
+                
+                <h3>Example Page Layout with Semantic Elements</h3>
+                
+                <div class="code-example">
+                    <pre>&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Website Title&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    
+    &lt;main&gt;
+        &lt;article&gt;
+            &lt;h2&gt;Article Title&lt;/h2&gt;
+            &lt;p&gt;Article content...&lt;/p&gt;
+        &lt;/article&gt;
+        
+        &lt;aside&gt;
+            &lt;h3&gt;Related Links&lt;/h3&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/aside&gt;
+    &lt;/main&gt;
+    
+    &lt;footer&gt;
+        &lt;p&gt;Copyright Info&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;</pre>
+                </div>
+                
+                <div class="note">
+                    <p><strong>Benefits:</strong> Using semantic HTML improves accessibility, helps with SEO, makes code easier to read and maintain, and enhances interoperability.</p>
+                </div>
+                
+                <a href="#home" class="practice-btn">Back to Home</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Complete HTML Course &copy; 2023. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(45, 44, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#root{
+    background-color: wheat;
+    text-align: center;
+    padding: 20px;
+    border-radius:10px;
+    position: relative;
+}
+input{
+    height: 25px;
+    width: 25px;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+}
+button{
+    height: 25px;
+    font-size: 20px;
+    background-color: rgb(105, 125, 125);
+    color: white;
+    margin-top: 10px;
+    border: 100px;
+    /* border-color: 10px 10px black; */
+
+   
+    
+}
+#result{
+    font-size: 20px;
+    margin-top: 10px;
+}
